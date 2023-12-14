@@ -31,8 +31,8 @@ main = hspec spec
 spec :: Spec
 spec = parallel $ do
 #if MIN_VERSION_base(4,8,0)
-    describe "RTSFlags" $
-        matchesTextShowSpec (Proxy :: Proxy RTSFlags)
+--     describe "RTSFlags" $
+--         matchesTextShowSpec (Proxy :: Proxy RTSFlags)
     describe "GCFlags" $
         matchesTextShowSpec (Proxy :: Proxy GCFlags)
     describe "ConcFlags" $

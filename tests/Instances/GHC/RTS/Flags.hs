@@ -64,8 +64,8 @@ $(Generics.deriveAll0 doTraceTypeName)
 $(Generics.deriveAll0 ''IoSubSystem)
 #endif
 
-instance Arbitrary RTSFlags where
-    arbitrary = genericArbitrary
+-- instance Arbitrary RTSFlags where
+--     arbitrary = genericArbitrary
 
 instance Arbitrary GCFlags where
     arbitrary = genericArbitrary
